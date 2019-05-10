@@ -71,6 +71,11 @@ public class Mahasiswa extends javax.swing.JPanel {
         btn_ok.setText("OK");
 
         btn_main.setText("Main Menu");
+        btn_main.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_mainActionPerformed(evt);
+            }
+        });
 
         Txtalamat.setColumns(20);
         Txtalamat.setRows(5);
@@ -147,6 +152,13 @@ public class Mahasiswa extends javax.swing.JPanel {
     private void tf_nrpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_nrpActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_tf_nrpActionPerformed
+
+    private void btn_mainActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_mainActionPerformed
+        // TODO add your handling code here:
+        MainMenu n = new MainMenu();
+        n.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btn_mainActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
