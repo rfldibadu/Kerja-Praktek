@@ -251,8 +251,6 @@ public class formSidang extends javax.swing.JFrame {
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("Data Sidang");
         getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 30, -1, -1));
-
-        jLabel8.setIcon(new javax.swing.ImageIcon("E:\\Kuliah\\SEMESTER 4\\Pengolahan Citra Digital\\Gambar\\black-background_00313351.jpg")); // NOI18N
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 910, 590));
 
         pack();
@@ -330,7 +328,13 @@ public class formSidang extends javax.swing.JFrame {
         ExecuteSidang es = new ExecuteSidang();
         String Hasil = es.InsertSidang(sdg);
         JOptionPane.showMessageDialog(rootPane, Hasil);
-        displayall();
+        if(Hasil=="Insert Sukses"){
+            tf_idsidang.setText("");
+            tf_ruangan.setText("");
+            tf_idKp.setText("");
+            displayall();
+        }
+        
 
     }//GEN-LAST:event_btn_simpanActionPerformed
 

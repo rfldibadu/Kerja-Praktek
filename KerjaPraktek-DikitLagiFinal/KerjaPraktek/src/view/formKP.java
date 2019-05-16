@@ -389,8 +389,6 @@ public class formKP extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btn_main, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 340, -1, -1));
-
-        jLabel12.setIcon(new javax.swing.ImageIcon("E:\\Kuliah\\SEMESTER 4\\Pengolahan Citra Digital\\Gambar\\black-background_00313351.jpg")); // NOI18N
         getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1310, 440));
 
         pack();
@@ -463,9 +461,9 @@ public class formKP extends javax.swing.JFrame {
             tf_perusahaan.setText("");
             tf_dsn.setText("");
             tampilData();
-            btn_edit.setEnabled(false);
-            btn_delete.setEnabled(false);
-            btn_simpan.setEnabled(true);
+            //btn_edit.setEnabled(false);
+            //btn_delete.setEnabled(false);
+            //btn_simpan.setEnabled(true);
         }
     }//GEN-LAST:event_btn_editActionPerformed
 
@@ -498,22 +496,22 @@ public class formKP extends javax.swing.JFrame {
         }else{
             JOptionPane.showMessageDialog(rootPane, "Silahkan Pilih Data");
         }
-        btn_edit.setEnabled(false);
-        btn_delete.setEnabled(false);
-        btn_simpan.setEnabled(true);
+        //btn_edit.setEnabled(false);
+        //btn_delete.setEnabled(false);
+        //btn_simpan.setEnabled(true);
     }//GEN-LAST:event_btn_deleteActionPerformed
 
     private void jTable2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable2MouseClicked
         // TODO add your handling code here:
         int row = jTable2.getSelectedRow();
         tf_idkp.setText(jTable2.getValueAt(row, 0).toString());
-        tf_nrp.setText(jTable2.getValueAt(row, 0).toString());
-        tf_pmb.setText(jTable2.getValueAt(row, 0).toString());
-        tf_perusahaan.setText(jTable2.getValueAt(row, 0).toString());
-        tf_dsn.setText(jTable2.getValueAt(row, 0).toString());
-        btn_edit.setEnabled(true);
-        btn_delete.setEnabled(true);
-        btn_simpan.setEnabled(false);
+        tf_nrp.setText(jTable2.getValueAt(row, 1).toString());
+        tf_pmb.setText(jTable2.getValueAt(row, 2).toString());
+        tf_perusahaan.setText(jTable2.getValueAt(row, 3).toString());
+        tf_dsn.setText(jTable2.getValueAt(row, 4).toString());
+        //btn_edit.setEnabled(true);
+        //btn_delete.setEnabled(true);
+        //btn_simpan.setEnabled(false);
         
     }//GEN-LAST:event_jTable2MouseClicked
 
